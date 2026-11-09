@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyronara Group</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0a0a0a;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(10px);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid rgba(212,175,55,.2);
+}
+
+.logo{
+font-family:'Cinzel',serif;
+color:#D4AF37;
+font-size:1.4rem;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+radial-gradient(circle at top,#d4af37 0%,#0a0a0a 70%);
+}
+
+.hero-content h1{
+font-size:5rem;
+font-family:'Cinzel',serif;
+color:#D4AF37;
+}
+
+.hero-content p{
+max-width:700px;
+margin:25px auto;
+line-height:1.8;
+font-size:1.1rem;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+margin-top:20px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+font-family:'Cinzel',serif;
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.section-desc{
+text-align:center;
+max-width:800px;
+margin:auto;
+color:#bbb;
+margin-bottom:50px;
+line-height:1.8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#141414;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(212,175,55,.3);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#D4AF37;
+}
+
+.card h3{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.timeline{
+display:grid;
+gap:20px;
+}
+
+.timeline-item{
+background:#141414;
+padding:25px;
+border-left:4px solid #D4AF37;
+border-radius:10px;
+}
+
+.founder{
+background:#111;
+text-align:center;
+}
+
+.founder img{
+width:150px;
+height:150px;
+border-radius:50%;
+margin-bottom:20px;
+border:3px solid #D4AF37;
+}
+
+.contact-box{
+text-align:center;
+line-height:2;
+font-size:1.1rem;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(212,175,55,.2);
+color:#999;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:3rem;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">VYRONARA GROUP</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#vision">Vision</a></li>
+<li><a href="#founder">Founder</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>VYRONARA GROUP</h1>
+
+<p>
+Designing Brands. Building The Future.
+We provide affordable design and branding services today while working toward a future of websites, applications, digital products, and innovative technology solutions.
+</p>
+
+<a href="#services" class="btn">Explore Services</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<p class="section-desc">
+Vyronara Group was founded with a vision to make professional digital services accessible to everyone.
+We help individuals, startups, and businesses create strong visual identities today while building the foundation for future technology solutions.
+</p>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Logo Design</h3>
+<p>Unique and memorable brand identities.</p>
+</div>
+
+<div class="card">
+<h3>Banner Design</h3>
+<p>Professional promotional and social media banners.</p>
+</div>
+
+<div class="card">
+<h3>Branding</h3>
+<p>Complete visual branding and business identity.</p>
+</div>
+
+<div class="card">
+<h3>UI/UX Design</h3>
+<p>Modern interfaces focused on user experience.</p>
+</div>
+
+<div class="card">
+<h3>Website Development</h3>
+<p>Coming Soon.</p>
+</div>
+
+<div class="card">
+<h3>App Development</h3>
+<p>Future-ready applications and digital solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="vision">
+
+<h2 class="section-title">Vision 2030</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2026</h3>
+<p>Creative Design Services</p>
+</div>
+
+<div class="timeline-item">
+<h3>2027</h3>
+<p>Branding & Digital Presence Solutions</p>
+</div>
+
+<div class="timeline-item">
+<h3>2028</h3>
+<p>Website Development Division</p>
+</div>
+
+<div class="timeline-item">
+<h3>2029</h3>
+<p>Mobile Application Development</p>
+</div>
+
+<div class="timeline-item">
+<h3>2030</h3>
+<p>Technology Products & Innovation Ecosystem</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="founder" id="founder">
+
+<h2 class="section-title">Founder</h2>
+
+<h3 style="color:#D4AF37;">Arnav Teotia</h3>
+
+<p style="max-width:800px;margin:20px auto;line-height:1.8;color:#ccc;">
+Entrepreneur with a vision to create a better future through affordable, accessible, and innovative services. Vyronara Group is built on the belief that great design, technology, and opportunities should be available to everyone.
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-box">
+
+<p>📧 vyronara001@gmail.com</p>
+
+<p>
+💻
+<a href="https://github.com/vyronara001-pixel"
+style="color:#D4AF37;">
+GitHub Profile
+</a>
+</p>
+
+<p>🏢 VYRONARA GROUP</p>
+
+<p>Building Tomorrow, Today.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 VYRONARA GROUP • All Rights Reserved
+
+</footer>
+
+</body>
+</html>
